@@ -15,27 +15,27 @@ public class Main {
         Cliente cliente = new Cliente();
 
         System.out.println("Datos del cliente");
-        cliente.setNombre("Daniel");
-        System.out.println("Nombre: " + cliente.getNombre());
-        cliente.setEdad(29);
-        System.out.println("Edad: " + cliente.getEdad() + " Años");
-        cliente.setTelefono(666666666);
-        System.out.println("Teléfono: " + cliente.getTelefono());
+        cliente.nombre = "Daniel";
+        System.out.println("Nombre: " + cliente.nombre);
+        cliente.edad = 29;
+        System.out.println("Edad: " + cliente.edad + " Años");
+        cliente.telefono = 666666666;
+        System.out.println("Teléfono: " + cliente.telefono);
         cliente.setCredito(+10000.00);
-        System.out.println("Crédito: " + cliente.getCredito());
+        System.out.println("Crédito: " + cliente.getCredito() + " €");
 
         System.out.println(" ");
 
         //Objeto trabajador con sus valores dados e impresos
         Trabajador trbajador = new Trabajador();
 
-        System.out.println("Datos del Trabajador");
-        trbajador.setNombre("Daniel");
-        System.out.println("Nombre: " + trbajador.getNombre());
-        trbajador.setEdad(29);
-        System.out.println("Edad: " + trbajador.getEdad() + " Años");
-        trbajador.setTelefono(666666666);
-        System.out.println("Teléfono: " + trbajador.getTelefono());
+        System.out.println("Datos del trabajador");
+        trbajador.nombre = "Daniel";
+        System.out.println("Nombre: " + trbajador.nombre);
+        trbajador.edad = 29;
+        System.out.println("Edad: " + trbajador.edad + " Años");
+        trbajador.telefono = 666666666;
+        System.out.println("Teléfono: " + trbajador.telefono);
         trbajador.setSalario(1000.00);
         System.out.println("Salario: " + trbajador.getSalario() + " €");
     }
@@ -46,28 +46,6 @@ class Persona {
     String nombre;
     int edad;
     int telefono;
-
-    public void setNombre (String nombre) {
-        this.nombre = nombre;
-    }
-    public String getNombre() {
-        return this.nombre;
-    }
-
-    public void setEdad (int edad) {
-        this.edad = edad;
-    }
-    public int getEdad() {
-        return this.edad;
-    }
-
-    public void setTelefono (int telefono) {
-        this.telefono = telefono;
-    }
-    public int getTelefono() {
-        return this.telefono;
-    }
-
 }
 
 // Clase cliente, que hereda de la clase persona, con la nueva propiedad pedida que solo existe para esta clase
